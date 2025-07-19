@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Treco AAJEX</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f9f9f9;
+    }
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #005baa;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.4rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    main {
+      padding-top: 80px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: #005baa;
+      border-bottom: 3px solid #ffcc00;
+      padding-bottom: 0.3rem;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    li {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+    .image-placeholder {
+      width: 100%;
+      max-height: 250px;
+      background: #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #666;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      user-select: none;
+    }
+    form {
+      background: #fff;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 5px #ccc;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    button {
+      background: #005baa;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    button:hover {
+      background: #004080;
+    }
+    footer {
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+      margin: 3rem 0 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Treco AAJEX</h1>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#o-que-fazemos">O que Fazemos</a>
+    <a href="#contato">Contato</a>
+    <a href="#irpf-online">IRPF Online</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="inicio">
+    <h2>Início</h2>
+    <p><strong>Otimização do Seu Negócio Começa Aqui.</strong></p>
+  </section>
+
+  <section id="quem-somos">
+    <h2>Quem Somos</h2>
+    <p>Na Villares Assessoria Contábil nós trabalhamos com você para otimizar seus negócios. Como uma empresa de Contabilidade premiada, nosso grupo de profissionais está sempre aqui para ajudar sua empresa a decolar e crescer.</p>
+
+    <h3>Breve Histórico</h3>
+    <p>Desde sua fundação em 1998, a Villares e Magalhães Assessoria Contábil tem se concentrado em prover soluções diferenciadas e confiáveis, com profissionalismo, criatividade e versatilidade, agregando valor aos negócios do cliente.</p>
+    <p>Durante já estes 21 anos de trabalho, adquirimos vasta experiência em todas as áreas contábeis, e nos destacamos entre os melhores em prestação de serviços contábeis especializados.</p>
+  </section>
+
+  <section id="o-que-fazemos">
+    <h2>O que Fazemos</h2>
+    <ul>
+      <li>Gerenciamento de contas empresariais</li>
+      <li>Mapeamento da economia interna da empresa</li>
+    </ul>
+    <p><strong>CONTABILIDADE</strong><br>
+    MEI, Simples Nacional</p>
+    <p><strong>CONTABILIDADE INTERNA</strong><br>
+    Villares organiza tudo para você.</p>
+    <p><strong>Departamento Trabalhista</strong><br>
+    O departamento trabalhista cuida dos direitos, e a Villares cuida do seu negócio.</p>
+    <p><strong>Pagando menos, com segurança fiscal.</strong></p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.</p>
+    <form action="#" method="POST" onsubmit="alert('Formulário enviado (simulado).'); return false;">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="irpf-online">
+    <h2>IRPF Online</h2>
+    <p>Facilitamos a declaração do seu Imposto de Renda Pessoa Física com uma plataforma simples, segura e rápida. Conte conosco para simplificar esse processo.</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Villares Assessoria Contábil. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
